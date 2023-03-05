@@ -18,12 +18,12 @@ class Category{
     {
         $this->id = $id;
     }
-    public function getCatName()
+    public function getName()
     {
         return $this->name;
     }
 
-    public function setCatName($name)
+    public function setName($name)
     {
         $this->name = $name;
     }

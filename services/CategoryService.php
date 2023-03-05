@@ -12,13 +12,13 @@ class CategoryService{
         $stmt = $conn->query($sql);
 
         // B3. Xử lý kết quả
-        $category = [];
+        $categories = [];
         while($row = $stmt->fetch()){
-            $article = new Category($row['ma_tloai'], $row['ten_tloai']);
-            array_push($category,$category);
+            $category = new Category($row['ma_tloai'], $row['ten_tloai']);
+            array_push($categories,$category);
         }
         // Mảng (danh sách) các đối tượng Article Model
 
-        return $category;
+        return $categories;
     }
 }

@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post">
+                        <form method ="POST" action = "index.php?controller=member&action=login">
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="txtUser"><i class="fas fa-user"></i></span>
                                 <input type="text" name="txtUser" class="form-control" placeholder="username" >

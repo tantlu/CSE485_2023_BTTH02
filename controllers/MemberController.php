@@ -1,21 +1,10 @@
 <?php
-include("services/MemberService.php");
-class MemberController {
-    public function login() {
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            $username = $_POST['txtUser'];
-            $password = $_POST['txtPass'];
+class MemberController{
 
-            $user = Process_login($username, $password);
-
-            if ($user) {
-                include 'views/admin/index.php';
-                exit;
-            } else {
-                $message = 'Tên đăng nhập hoặc mật khẩu không đúng';
-            }
-        }
-
+    public function login(){
+        // Nhiệm vụ 1: Tương tác với Services/Models
+        // echo "Tương tác với Services/Models from Article";
+        // Nhiệm vụ 2: Tương tác với View
         include("views/member/login.php");
     }
 
